@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>gallery</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <style type="text/css">
+    	body {
+    		overflow: scroll;
+    	}
+      .navbar{
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: purple;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 300px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid darkblue;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+    </style>
+   <style type="text/css">
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+
+}
+
+.desc {
+  transition: .5s ease;
+  opacity: 0;
+  position:fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 360px;
+  height: 260px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+  transform: scale(1.1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+div.gallery:hover .img{
+  opacity: 0.3;
+}
+
+div.desc {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  top: 60px;
+  
+}
+
+div.gallery:hover .desc{
+  opacity: 1;
+}
+.text {
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><span style="color: orange;font-weight: bold">T</span>ravel</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="package.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+<h1><center><br><br>PHOTOS THAT WILL MAKE YOU WANT TO TRAVEL SRI LANKA..</center></h1>
+<body bgcolor="#F0F8FF">
+
+	<br>
+	<p><center><font style="font-size: 20px; font-weight: lighter; color: black; text-shadow: 4px 4px 8px black; padding-top: 100px; font-family: times new roman; ">What do you get when you put together a dazzling mirage of pristine white-sanded beaches, the endless green rolling hills of tea plantations, and the wildlife diversity of an African Safari? Sri Lanka, or as the locals like to call it, the pearl of the Indian Ocean.<br> Here are 35 photos that will probably make you want to book a flight to Sri Lanka ASAP:</font></center></p>
+<br><br><br>
+<section>
+<div class="gallery">
+  <a target="_blank" href="waterfall.jpg">
+    <img src="waterfall.jpg" alt="waterfall" width="700" height="500">
+  </a>
+  <div class="desc">
+    <div class="text"><b>Waterfall discoveries on the drive from Nuwera Eliya to Kandy</b></div> </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="nuckles.jpg">
+    <img src="nuckles.jpg" alt="Mountains" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Exploring the Knuckles Mountain Range</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="galle.jpg">
+    <img src="galle.jpg" alt="galle" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Exploring the town of Galle</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="ella.jpg">
+    <img src="ella.jpg" alt="bridge" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Witness The Countryside Charm</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="pinnawala1.jpg">
+    <img src="pinnawala1.jpg" alt="Elephant" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b> Pinnawala Elephant Orphanage – See The Giant Beasts</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mirissa.jpg">
+    <img src="mirissa.jpg" alt="beach" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Mirissa – Go Whale Watching</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="curry.jpg">
+    <img src="curry.jpg" alt="food" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Feasting on delicious Sri Lankan Curry at a local village</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="unawatuna1.jpg">
+    <img src="unawatuna1.jpg" alt="beach" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Afternoon swims at Unawatuna Beach </b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Yala.jpg">
+    <img src="Yala.jpg" alt="jungle" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Yala National Park – Amidst The Wildlife</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="sigirii.jpg">
+    <img src="sigirii.jpg" alt="Forest" width="700" height="500">
+  </a>
+  <div class="desc"> <div class="text"><b>Climbing the famous Sigiriya Rock Fortress</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Jaffna.jpg">
+    <img src="Jaffna.jpg" alt="Lights" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Jaffna – Explore The Historical Architectures</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Trincomalee.jpg">
+    <img src="Trincomalee.jpg" alt="beaches" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Trincomalee – The Temple City</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Kandalama.jpg">
+    <img src="Kandalama.jpg" alt="forests" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Kandalama – The Surreal Village</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Sri-Lanka-Bucketlist-667.jpg">
+    <img src="Sri-Lanka-Bucketlist-667.jpg" alt="perahara" width="600" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Watching the fire walkers during a cultural show in Kandy</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="hortan.jpg">
+    <img src="hortan.jpg" alt="Mountain" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Horton Plains National Park – Of Lakes And Greenery</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="peradeniya.jpg">
+    <img src="peradeniya.jpg" alt="Mountains" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Perandeniya Botanical Gardens – See The Flowers Blooming</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="kandy.jpg">
+    <img src="kandy.jpg" alt="Temple" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Exploring the famous Temple of the Tooth in Kandy</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Adams-Peak.jpg">
+    <img src="Adams-Peak.jpg" alt="mountains" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Adams Peak – The UNESCO World Heritage Site</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="elephant.jpg">
+    <img src="elephant.jpg" alt="safari" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Elephant Safari at Minneriya National Park</b></div></div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Polonnaruwa.jpg">
+    <img src="Polonnaruwa.jpg" alt="antient" width="650" height="400">
+  </a>
+  <div class="desc"> <div class="text"><b>Polonnaruwa – The Ancient Ruins</b></div></div>
+</div>
+</section>
+<br><br><br><br>
+<section>
+  <br><br><br>
+<p><center><i><b>Full of romantic landscapes, stirring mountains, lush green tea gardens and golden beaches, the island nation of Sri Lanka is nothing short of magnificent. The country has no shortage of beautiful awe-inspiring spots, natural, historic and cultural, each more picture-perfect than the next. From soulful Buddhist monasteries and temples to exotic and impeccable spots rarely explored, Sri Lanka offers everything that makes your escape a memorable one! Whether traveling with your significant other or planning a vacay with your family, Sri Lanka won’t disappoint you!<br>
+Take a trip to these most beautiful places in Sri Lanka and you would find it difficult to leave back home. Read on to know the most beautiful experiences of Sri Lanka that includes astounding places and popular attractions.</b> </i></center></p>
+</section>
+<br><br><br><br>
+</body>
+</html>

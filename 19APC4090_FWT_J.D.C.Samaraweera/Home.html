@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel SriLanka</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: purple;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid darkblue;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: darkblue;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: purple;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  transition: 1s;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  filter: drop-shadow(4px 4px 6px gray);
+  transform: scale(1.2);
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+   font-size: 15px;
+    font-family: Arial;
+}
+
+fieldset {
+  background-color: #eeeeee;
+  width:150%;
+  align:center;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 6px 12px;
+ 
+}
+
+input {
+  margin: 7px 0;
+  padding: 8px 14px;
+  width: 80%;
+}
+  background-image{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+  }
+   table{
+    width: 80%;
+  }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><span style="color: orange;font-weight: bold">T</span>ravel</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="package.html">PACKAGES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Wonderful <br><span>Island</span></h1>
+            <p class="par">See what's waiting for you on your next island getaway.
+              <br>Savour the unique experiences this island treasure has to offer...</p>
+              <br><br>
+
+                <button class="cn"><a href="#">EXPLOYE</a></button>
+
+                <div class="form">
+                    <h2>Quick Contact</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="mobilenumber" name="" placeholder="Enter mobile Number Here">
+                    <button class="btnn"><a href="#">Submit</a></button>
+
+                    <p class="liw">Contact with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <section class="book" id="book">
+
+    <h1 class="heading"><center><br>
+        <span><font style="font-size: 50px; text-shadow: 8px 8px 16px black; font-family: palatino">Welcome to Sri lanka......</font></span>
+    </center></h1><br><br>
+<p><center><font style="font-size: 15px; font-weight: lighter;  font-family: Arial, Helvetica, sans-serif">Sri Lanka is one of the leading romantic destinations in the whole world. The land of serendipity brings spiritual tranquility and a chance to rediscover oneself. The beauty of this tiny island is simply breath-taking. Known for its enchanting ancient ruins, endless soft-sanded beaches, imposing mountains, colourful festivals, tempting water sports, dense wild-life, diverse ethnical groups and off the top hospitality from the local residents, Sri Lanka is bound to make you come back again. Sri Lanka Travel and Tourism brings all of this for you right under your fingertips so that you can discover the serene island for yourself.</center></p>
+</section>
+<br><br>
+<h2><center><font style="font-size: 50px; text-shadow: 8px 8px 16px black; font-family: courier">Discover Srilanka</font></center></h2>
+
+<br><br>
+<section>
+<div class="gallery"><center>
+  <a target="_blank" href="sigirii.jpg">
+    <img src="sigirii.jpg" alt="SIGIRIYA" width="600" height="600">
+  </a>
+  <div class="desc">Sigiriya is one of the most valuable historical monuments of Sri Lanka. Referred by locals as the Eighth Wonder of the World this ancient palace and fortress complex has significant archaeological importance and attracts thousands of tourists every year. It is probably the most visited tourist destination of Sri Lanka</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="unawatuna.jpg">
+    <img src="unawatuna.jpg" alt="beach" width="600" height="500">
+  </a>
+  <div class="desc">Unawatuna is most popular beach in Sri Lanka and a great place to visit for a beach getaway. There are plenty of things to do in Unawatuna and also in the surrounding the area as well including Jungle Beach, Galle, Wijaya Beach and more!</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Yala.jpg">
+    <img src="Yala.jpg" alt="Forests" width="600" height="600">
+  </a>
+  <div class="desc">Yala National Park is the most visited and second largest national park in Sri Lanka.Yala National Park is a huge area of forest, grassland and lagoons bordering the Indian Ocean, in southeast Sri Lanka. It’s home to wildlife such as leopards, elephants and crocodiles, as well as hundreds of bird species</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="dalada.jpg">
+    <img src="dalada.jpg" alt="Temples" width="600" height="600">
+  </a>
+  <div class="desc">The Dalada Maligawa, also known as, the Temple of the Tooth, is one of the landmark sites in the city of Kandy.It is a must visit location for all tourists.the Temple of the Sacred Tooth Relic - is one of the most important pilgrim sites in Buddhist culture.Before preparing your visit keep in mind that the Maligawa is a Buddhist shrine and you will need to wear attire that covers your shoulders and legs</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="hikkaduwa.jpg">
+    <img src="hikkaduwa.jpg" alt="Beach" width="600" height="600">
+  </a>
+  <div class="desc">Hikkaduwa is a seaside resort town in southwestern Sri Lanka.Combined with an active nightlife, many tourists come to Hikkaduwa for water sports such as surfing, boogie-boarding, snorkelling and scuba diving.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="pinnawala.jpg">
+    <img src="pinnawala.jpg" alt="Pinnawala" width="600" height="600">
+  </a>
+  <div class="desc">Pinnawala Elephant Orphanage (PEO) ; just as the name suggests holds a unique disposition in the ex-situ animal care. It’s success and fame has travelled not just within the country but throughout the world to an extent where Pinnawala synonymous with the Sri Lankan Elephant..</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="nuwaraeliya.jpg">
+    <img src="nuwaraeliya.jpg" alt="places" width="600" height="600">
+  </a>
+  <div class="desc">Nuwara Eliya loves to lure visitors with its laid-back setting and cooler weather..</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="sinha.jpg">
+    <img src="sinha.jpg" alt="Jungles" width="600" height="600">
+  </a>
+  <div class="desc">Sinharaja Rain Forest, the last viable remnant of Sri Lanka’s tropical lowland rainforest</div>
+</div>
+</center></div></section>
+
+<br><br><br><br>
+<br><br><br><br>
+<section>
+  <br><br><br>
+  <br><h1><center><marquee><font style="font-size: 60px;font-weight: lighter;">BOOK NOW.....</font></marquee></center></h1>
+  <table>
+  <tr>                                                                                                 
+            <td><img src="1234.jpg" alt="" image style="width:500px; height:500px"><br><br></td>
+              <td> </td>
+               <td> </td>
+            <td><font style="font-size: 80px; font-weight: bold; color: silver; text-align: center;  text-shadow: 8px 8px 16px black; padding-top: 100px; font-family: times new roman; "><marquee direction="down">BOOK<br>NOW</marquee></font></td>
+             
+         <td><form action="/action_page.php">
+ <fieldset>
+  <legend>Booking:</legend>
+  <br>
+  <label for="fname">  Full name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">  Where to go:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">  Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">  Booking Date:</label>
+  <input type="date" id="birthday" name="Date"><br><br>
+  <input type="submit" value="Book now">
+ </fieldset>
+</form>
+</center ></td>
+</div>
+</tr></table>
+</section>
+<br>
+<section class="footer"><br>
+  <div style="background-image: url(12345.jpg);"> <style="width:100px;  height:100px;>
+    <div class="box-container">
+
+      <br> <div class="box">
+            <br><h3><center><font style="font-size: 20px; font-weight: bold; color:black;"><u>About us</u></font></center></h3>
+            <br>
+            <p><center><font style="font-size: 20px; font-weight: lighter; color: white; text-shadow: 4px 4px 8px black; padding-top: 100px; font-family: times new roman; ">Each day on this island promises new experiences, discoveries, and life-long memories. With so much to do,let us help you with these itineraries created just for you!</font></center></p>
+        </div>
+        <div class="box">
+            <br><br>
+            <h3><center><font style="font-size: 20px; font-weight: bold; color:black;"><u>Branch locations</u></font></center></h3>
+            <br>
+            <center><a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">Colombo   </font></a>  | 
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">Galle  </font></a>  |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">Kandy  </font></a>  |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">Jaffna  </font></a></center>
+        </div>
+        <div class="box">
+            <br><br>
+            <h3><center><font style="font-size: 20px; font-weight: bold; color:black;"><u>Quick links</u></font></center></h3>
+            <br>
+            <center><a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">home</font></a> |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">about</font></a> |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">gallery</font></a> |
+             <a href="#"><font style="font-size: 20px; font-weight: lighter; color:white;">packages</font></a>
+        </div>
+        <div class="box">
+            <br><br>
+            <h3><center><font style="font-size: 20px; font-weight: bold; color:black;"><u>follow us</u></font></h3><br>
+            <center><a href="#"><font style="font-size: 20px; font-weight: lighter; color:wheat;">facebook</font></a> |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:wheat;">instagram</font></a> |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:wheat;">twitter</font></a> |
+            <a href="#"><font style="font-size: 20px; font-weight: lighter; color:wheat;">linkedin</font></a></center>
+            <br><br><br><br>
+            <p>                                                            </p>
+        </div>
+
+    </div>
+
+
+</section>
+</body>
+</html>
+
+
+
+
+
+    
+</body>
+</html>
+</body>
+</html>
